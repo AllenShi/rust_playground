@@ -9,8 +9,8 @@ mod common;
 #[test]
 fn int_test_house_with_cell() {
     common::setup();
-    let my_house = House { bedrooms: 2 };
-    let my_dream_house = House { bedrooms: 5 };
+    let my_house = House { bedrooms: 2, name: &"my house" };
+    let my_dream_house = House { bedrooms: 5, name: &"dream house" };
 
 
     let my_cell = Cell::new(my_house);
