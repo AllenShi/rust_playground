@@ -42,4 +42,12 @@ mod tests {
         println!("Alice says: {}", alice);
         println!("Bob says: {}", bob);
     }
+
+    #[test]
+    fn unit_test_string_assignment() {
+        let my_value = String::from("hello, world");
+        let another_value = my_value;
+        // println!("Values: {} {}", my_value, another_value);
+        //                           ^^^^^^^^ value borrowed here after move
+    }
 }
